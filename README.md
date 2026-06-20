@@ -84,7 +84,6 @@ app/build/outputs/apk/debug/app-debug.apk
 Android 10 及以上系统主要通过 MediaStore 保存图片，不需要传统外部存储写入权限。
 
 ## 设计思路
-
 项目经历了几个阶段：
 
 1. 先完成作业要求：网络图片、双列列表、详情页和缓存。
@@ -92,10 +91,4 @@ Android 10 及以上系统主要通过 MediaStore 保存图片，不需要传统
 3. 然后补充真实使用路径：收藏、最近、搜索、保存相册、分页加载和大图预览。
 4. 最后整理工程结构：拆分 data、remote、cache、repository、ui、util，避免所有逻辑堆在 Activity 中。
 
-这个项目刻意保留了 OkHttp、BitmapFactory、缓存和调度逻辑的手写实现，用来体现客户端开发学习过程。正式项目中可以进一步考虑使用 Coil/Glide、Room/DataStore 等成熟方案。
-
-## 相关文档
-
-- `技术方案设计.md`：项目功能、架构、缓存、加载策略和方案亮点。
-- `项目思考过程与复盘.md`：项目从作业 Demo 演进为素材库的思考过程、遇到的问题和解决方案。
 
